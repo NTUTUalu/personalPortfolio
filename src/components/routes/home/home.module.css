@@ -1,0 +1,36 @@
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: blue;
+    align-items: center;
+  }
+  
+  h3 {
+    color: rgb(17, 235, 17);
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .navLinks{
+    display: flex;
+    align-items: center;
+  }
+  ul li{
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  

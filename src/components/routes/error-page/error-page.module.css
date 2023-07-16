@@ -1,0 +1,7 @@
+.error-page{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 100px;
+}
