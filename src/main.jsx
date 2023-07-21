@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import Navbar from "./components/routes/home/navigation";
 import Home from './components/routes/home/home.jsx';
 import About from './components/routes/about/about'
 import Projects from './components/routes/projects/projects'
@@ -18,9 +19,13 @@ import "./components/routes/about/about";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Navbar/>,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "about/:aboutId",
         element: <About/>,

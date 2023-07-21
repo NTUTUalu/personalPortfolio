@@ -1,20 +1,48 @@
-.Navigation {
+.container {
+    margin: 70px 0px 20px 0px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
-    background-color: blue;
-    align-items: center;
+    height: 70vh;
+    /* background-color: blue; */
+    padding: 0px 100px 0px 100px;
   }
-  
+
   h3 {
-    color: rgb(17, 235, 17);
+    color: rgb(101, 116, 101);
   }
   
   .links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+.front {
+ /* background-color: gray; */
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ padding: 0px 60px 0px 0px;
+ width: 50%;
+}
+.designer {
+    /* background-color: lightgrey; */
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    width: 50%;
+    /* padding: 0px 0px 0px 60px; */
+  }
+  p {
+    margin-bottom: 100px;
+    width: 400px;
+    
+  }
+  h2{
+    margin-bottom:50px ;
+  }
+
+  h5{
+    letter-spacing: 1px;
   }
   
   .navLinks{
@@ -33,4 +61,19 @@
     padding: 0;
   }
   
-  
+  .next {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: blue; */
+    height: 40px;
+  }
+  .lottieDir {
+    /* transform: scaleX(-1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 20px;
+    /* background-color: blue; */
+  }

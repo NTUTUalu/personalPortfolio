@@ -1,38 +1,38 @@
-import "../home/home.module.css";
-import lightIcon from "../../images/icons8-sun.svg";
-import darkIcon from "../../images/icons8-code.svg";
-import "./home.module.css";
-import { Outlet,  Link} from "react-router-dom";
+import styles from "../home/home.module.css";
+// import { Lottie } from "@lottiefiles/react-lottie-player"
+import Lottie from "lottie-react"
+import animationData from "../../images/arrow.json"
+
+
 
 
 function Home() {
   
+
   return (
     <>
-      <nav className="Navigation">
-        <img src={darkIcon} />
-        <div className="navLinks">
-          <ul>
-          <li>
-              <Link to={`/`}>Home</Link>
-
-            </li>
-            <li>
-              <Link to={`about/1`}>About</Link>
-
-            </li>
-
-            <li><Link to={`projects/1`}>Projects</Link></li>
-            <li><Link to={`contact/1`}>Contact</Link></li>
-          </ul>
-          <img src={lightIcon} />
+    <div className={styles.container}>
+      <div className={styles.front}>
+        <div>
+        <h2>Hi, {`I'm`} Ntutu Sekonyela.</h2>
+      <h3>Frontend Developer</h3>
+      <p>Product designer specializing in UX research and beautiful UI designs</p>
         </div>
-      </nav>
-      <h3>This is our landing page/home page</h3>
-      <div id="detail">
-        <Outlet />
+        <div className={styles.next}>
+          <h5>See More About Me</h5>
+          <div className={styles.lottieDir}>
+      
+                <Lottie animationData={animationData} />
+             
+          </div>
+        </div>
       </div>
-    </>
+      <div className={styles.designer}>
+        <h3>Designer</h3>
+        <p>Product designer specializing in UX research and beautiful UI designs</p>
+      </div>
+    </div>
+  </>
   );
 }
 
