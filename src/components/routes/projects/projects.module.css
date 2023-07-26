@@ -1,0 +1,23 @@
+
+
+ .pHeading{
+    padding: 0px 100px 0px 100px;
+    /* color: red; */
+ } 
+  .next {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: blue;
+    padding: 0px 100px 0px 100px;
+    height: 40px;
+  }
+  .lottieDir {
+    /* transform: scaleX(-1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 20px;
+    /* background-color: blue; */
+  }

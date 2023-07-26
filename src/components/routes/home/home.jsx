@@ -4,11 +4,7 @@ import Lottie from "lottie-react"
 import animationData from "../../images/arrow.json"
 
 
-
-
-function Home() {
-  
-
+function Home() { 
   return (
     <>
     <div className={styles.container}>
@@ -16,14 +12,12 @@ function Home() {
         <div>
         <h2>Hi, {`I'm`} Ntutu Sekonyela.</h2>
       <h3>Frontend Developer</h3>
-      <p>Product designer specializing in UX research and beautiful UI designs</p>
+      <p>Build robust web applications with clean elegant and robust code</p>
         </div>
         <div className={styles.next}>
           <h5>See More About Me</h5>
           <div className={styles.lottieDir}>
-      
                 <Lottie animationData={animationData} />
-             
           </div>
         </div>
       </div>

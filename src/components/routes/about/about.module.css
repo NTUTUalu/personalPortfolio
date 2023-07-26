@@ -1,0 +1,169 @@
+.wrapper {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  padding: 0px 100px 0px 100px;
+  /* background-color: blue; */
+  margin: 70px 0px 20px 0px;
+}
+.left {
+  width: 60%;
+  /* background-color: rgb(119, 119, 119); */
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  /* background-color: aquamarine; */
+}
+
+.mood {
+  height: 150px;
+  width: 250px;
+  margin-top: 40px;
+  box-shadow: -4px 4px 10px 1px rgba(211, 211, 211, 0.534);
+}
+
+/* working on the slider */
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  padding: 10px 100px 0px 100px;
+}
+.sliderRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  padding: 5px 0px 0px 0px;
+  border-top: 2px solid lightgray;
+  /* background-color: aliceblue; */
+}
+
+.navImages {
+  width: 220px;
+  height: 150px;
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* The 'object-fit: cover' property makes the image cover the container while maintaining its aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+
+  border: 4px solid rgba(211, 211, 211, 0.288);
+}
+
+/* styling the skills segment */
+
+.skills {
+  display: flex;
+  margin: 200px 0px 150px 0px;
+  width: 100%;
+  height: 60vh;
+  padding: 10px 100px 0px 100px;
+}
+.leftskills {
+  width: 30%;
+  /* background-color: rgba(211, 211, 211, 0.253); */
+}
+.middle {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.skillset {
+  width: 300px;
+  height: 300px;
+}
+.rightskills {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
+  background-color: rgba(211, 211, 211, 0.253);
+}
+
+
+/* styling the section segment  */
+
+section {
+  display: flex;
+  padding: 10px 100px 0px 100px;
+  /* background-color: blue; */
+  width: 100%;
+  height: 95vh;
+}
+.leftAnimation {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    /* background-color: aqua; */
+}
+.rightAnimation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 200px;
+    width: 50%;
+    /* background-color: pink; */
+    position: relative;
+
+}
+
+.lottie{
+    height: 400px;
+    /* background-color: black; */
+}
+h1{
+    font-style: italic;
+}
+
+/* styling the graph */
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 100px 0px 100px;
+    /* background-color: rgb(255, 0, 0.100,); */
+    width: 100%;
+    height: 90vh;
+}
+.books {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(2, 2, 2,0.1);
+    padding: 20px;
+}
+ 
+  .next {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: blue; */
+    height: 40px;
+    padding: 0px 100px 0px 100px;
+    margin-bottom: 50px;
+  }
+.lottieDir {
+    /* transform: scaleX(-1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 20px;
+    /* background-color: blue; */
+  }
