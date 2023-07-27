@@ -5,6 +5,7 @@
     background-color: rgb(94, 93, 91);
     height: 50px;
     border-top:  2px solid lightgrey;
+    position: relative;
 }
 .copyright{
     display: flex;

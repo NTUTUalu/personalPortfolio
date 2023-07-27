@@ -8,7 +8,7 @@ import animationData from "../../images/arrow.json"
 
 function About() {
   return (
-    <>
+    <div className={styles.color}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
           <h3>About Me.</h3>
@@ -52,7 +52,7 @@ function About() {
         <div className={styles.leftAnimation}>
           <Lottie className={styles.lottie} animationData={random} />
         </div>
-        <div className={styles.rightAnimations}>
+        <div className={styles.rightAnimation}>
           <h1>Random facts</h1>
           <h5>I prefer brunch over breakfast</h5>
           <h5>Big fan of Jigga / Hov</h5>
@@ -70,7 +70,7 @@ function About() {
                 <Lottie animationData={animationData} />
           </div>
       </div>
-    </>
+    </div>
   );
 }
 
