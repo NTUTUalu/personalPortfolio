@@ -1,4 +1,4 @@
-import styles from "../projectPortfolio/projectPortfolio.module.css";
+import styles from "./projectPortfolio.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Projectportfolio() {

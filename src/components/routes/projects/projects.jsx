@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import animationData from "../../images/arrow.json";
 // import styles from "../projects/projects.module.css";
 
-import styles from "../projects/projects.module.css";
+import styles from "./projects.module.css";
 // import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 //import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ProjectPortfolio from "../projectPortfolio/projectPortfolio";

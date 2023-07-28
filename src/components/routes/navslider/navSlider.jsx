@@ -1,4 +1,4 @@
-import styles from "../navslider/navSlider.module.css"
+import styles from "./navSlider.module.css"
 
 function NavSlider() {
     return <>

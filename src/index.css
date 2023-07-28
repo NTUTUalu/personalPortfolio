@@ -6,8 +6,7 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #423f3f;
   height: auto;
-  position: relative;;
-
+  position: relative;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,10 +19,10 @@ body {
   width: 100%;
   height: auto;
   margin: 0px;
-  background-color: #1cf300;
 
 }
 
 * {
   box-sizing: border-box;
+  background-color: #423f3f;
 }

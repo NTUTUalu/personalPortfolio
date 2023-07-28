@@ -6,22 +6,36 @@
     height: 50px;
     border-top:  2px solid lightgrey;
     position: relative;
+ 
 }
+
 .copyright{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    /* background-color: rgb(57, 218, 218); */
+    background-color: rgb(94, 93, 91);
     height: 20px;
     width:150px;
-
 }
 
-h5{
+.copyright h5{
     font-size: 15px;
+    margin: 0px;
+    font-weight: bold;
+    background-color: rgb(94, 93, 91);
+    color: rgb(255, 255, 255);
+    
+}
+.copyright img {
+    background-color: rgb(94, 93, 91);
 }
 
-h3{
-    color: white;
+.bottom h3{
+    margin: 0;
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(94, 93, 91);
+    
 }

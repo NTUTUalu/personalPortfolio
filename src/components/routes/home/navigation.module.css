@@ -5,7 +5,7 @@
   align-items: center;
   margin: 30px 40px 0px 40px;
   padding: 0px 20px 0px 20px;
-  background-color: #242424;
+  /* background-color: #242424; */
   /* height: auto; */
 }
 
@@ -22,6 +22,8 @@ h3 {
 .navLinks{
   display: flex;
   align-items: center;
+  /* background-color: #be2b2b; */
+  margin:0px;
   }
 
 .links {
@@ -32,10 +34,11 @@ h3 {
   letter-spacing: 2%;
 }
 
-ul{
+.navLinks ul{
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  /* background-color: blue; */
 }
 

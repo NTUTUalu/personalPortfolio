@@ -3,6 +3,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
   
 }
 section {
@@ -10,7 +11,9 @@ section {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin-bottom: 60px;
+  margin: 10px;
+  /* background-color: black; */
+  
 }
 
  .pHeading{
@@ -21,7 +24,7 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
     padding: 0px 100px 0px 100px;
     height: 40px;
     position: relative;
@@ -38,10 +41,10 @@ section {
  /* working on tabs */
 
  .Tab{
-  background-color: blue;
-  width: 100%;
+  /* background-color: blue; */
+  width: auto;
   padding: 10px;
-  min-width: 700px;
+  /* min-width: 700px; */
   height: auto;
   position: relative;
  }

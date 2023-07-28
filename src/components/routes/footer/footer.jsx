@@ -1,9 +1,10 @@
 import c from "../../images/copyright.png"
-import styles from "./footer.module.css"
+import footerStyles from "./footer.module.css"
+
 function Footer () {
     return <>
-    <footer className={styles.bottom}>
-        <div className={styles.copyright}>
+    <footer className={footerStyles.bottom}>
+        <div className={footerStyles.copyright}>
         <img src={c}/>
         <h5>African Group</h5>
         </div>

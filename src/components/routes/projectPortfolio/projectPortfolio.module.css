@@ -4,10 +4,10 @@
    .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    width: auto;
     background-color: #f01616;
     height: 100%;
-    gap: 50px 100px;
+    gap: 50px 60px;
    }
    .gridItem{
     height: 200px;
