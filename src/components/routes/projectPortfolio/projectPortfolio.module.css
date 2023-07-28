@@ -4,14 +4,16 @@
    .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: auto;
-    background-color: #f01616;
+    width: 100%;
+    /* background-color: #f01616; */
     height: 100%;
     gap: 50px 60px;
+    padding: 0px;
+    margin: 0px;
    }
    .gridItem{
     height: 200px;
-    background-color: black;
+    /* background-color: black; */
     position: relative;
    }
   

@@ -1,6 +1,6 @@
 .color{
   /* background-color: #df9292; */
-  margin: 0px;
+  margin: 0px 0px 40px 0px;
   padding: 0px;
 }
 .wrapper {
@@ -9,7 +9,7 @@
   display: flex;
   padding: 0px 100px 0px 100px;
   /* background-color: blue; */
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 50px 0px;
 }
 .left {
   width: 60%;
@@ -97,7 +97,7 @@
 }
 .leftskills {
   width: 30%;
-  background-color: rgba(211, 211, 211, 0.253);
+  /* background-color: rgba(211, 211, 211, 0.253); */
 }
 .skills h3{
   margin-bottom: 30px;
@@ -106,6 +106,7 @@
 .skills h5{
   color: lightgrey;
   font-size: 17px;
+  margin-bottom: 15px;
 }
 .middle {
   width: 40%;
@@ -123,7 +124,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content:flex-start;
-  background-color: rgba(211, 211, 211, 0.253);
+  /* background-color: rgba(211, 211, 211, 0.253); */
 }
 
 
@@ -137,6 +138,7 @@
   /* background-color: blue; */
   width: 100%;
   height: auto;
+  margin: 0px;
 }
 .leftAnimation {
     width: 50%;
@@ -178,9 +180,10 @@
     justify-content: center;
     align-items: flex-start;
     padding: 10px 100px 0px 100px;
-    /* background-color: rgb(255, 0, 0.100,); */
+    /* background-color: black; */
     width: 100%;
     height: 90vh;
+    margin: 0px;
 }
 .books {
     height: 80%;
@@ -214,7 +217,7 @@
   justify-content: flex-start;
   align-items: center;
   /* background-color: blue; */
-  margin-top: 20px;
+  margin-bottom: 40px;
   height: 50px;
   padding: 0px 0px 0px 100px;
   

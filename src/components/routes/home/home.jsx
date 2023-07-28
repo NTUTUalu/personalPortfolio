@@ -1,4 +1,4 @@
-import styles from "./home.module.css";
+import homeStyles from "./home.module.css";
 // import { Lottie } from "@lottiefiles/react-lottie-player"
 import Lottie from "lottie-react"
 import animationData from "../../images/arrow.json"
@@ -7,21 +7,19 @@ import animationData from "../../images/arrow.json"
 function Home() { 
   return (
     <>
-    <div className={styles.container}>
-      <div className={styles.front}>
+    <div className={homeStyles.container}>
+      <div className={homeStyles.front}>
         <div>
         <h2>Hi, {`I'm`} Ntutu Sekonyela.</h2>
       <h3>Frontend Developer</h3>
-      <p>Build robust web applications with clean elegant and robust code</p>
+      <p>I build robust web applications with clean, elegant and robust code. Change is inevitable in a project's life span, hence creating projects with easily maintainable code is mandatory.</p>
         </div>
-        <div className={styles.next}>
-          <h5>See More About Me</h5>
-          <div className={styles.lottieDir}>
-                <Lottie animationData={animationData} />
+        <div className={homeStyles.nextHome}>
+            <h5 className={homeStyles.next}>See More About Me</h5>
+              <Lottie animationData={animationData} className={homeStyles.arrow}/>
           </div>
-        </div>
       </div>
-      <div className={styles.designer}>
+      <div className={homeStyles.designer}>
         <h3>Designer</h3>
         <p>Product designer specializing in UX research and beautiful UI designs</p>
       </div>

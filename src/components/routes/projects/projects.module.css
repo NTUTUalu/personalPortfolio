@@ -1,18 +1,20 @@
 .color{
-  background-color: #614545;
+  /* background-color: #614545; */
   height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
   
 }
-section {
+.tabWrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 10px;
+  width: 100%;
+  padding: 0px 100px 40px 100px;
   /* background-color: black; */
+  margin: 0px;
   
 }
 
@@ -43,7 +45,7 @@ section {
  .Tab{
   /* background-color: blue; */
   width: auto;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   /* min-width: 700px; */
   height: auto;
   position: relative;
@@ -54,13 +56,13 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  background-color: #f01616;
+  /* background-color: #f01616; */
   height: 100%;
   gap: 50px 100px;
  }
  .gridItem{
   height: 200px;
-  background-color: black;
+  /* background-color: black; */
   position: relative;
  }
 
@@ -71,3 +73,37 @@ section {
   object-fit: cover;
   /* box-shadow: -4px 4px 10px 1px rgba(211, 211, 211, 0.534); */
 }
+
+/* working on progressing to the next */
+.nextHome {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: blue; */
+  margin-top: 20px;
+  height: 50px;
+  padding: 0px 0px 0px 100px;
+  
+}
+
+.arrow {
+  height: 35px;
+  width: 40px;
+  /* background-color: aqua; */
+  display:flex;
+  font-size: 10px;
+  align-items:start;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.next{
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  /* align-items: center; */
+  font-size: 16px;
+  color:white;
+  /* background-color:blueviolet; */
+}
+

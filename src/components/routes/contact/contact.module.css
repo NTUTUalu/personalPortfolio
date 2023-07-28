@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 40px 100px 40px 100px;
+    padding: 40px 100px 30px 100px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,7 @@ p{
 
 .formWrapper {
     display: flex;
+    flex-direction: column;
     justify-content:start;
     /* background-color: aqua; */
     padding: 0px;

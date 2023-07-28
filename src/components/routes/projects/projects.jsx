@@ -1,8 +1,8 @@
 import Lottie from "lottie-react";
 import animationData from "../../images/arrow.json";
-// import styles from "../projects/projects.module.css";
+// import projectStyles from "../projects/projects.module.css";
 
-import styles from "./projects.module.css";
+import projectStyles from "./projects.module.css";
 // import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 //import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ProjectPortfolio from "../projectPortfolio/projectPortfolio";
@@ -12,32 +12,30 @@ import Tabs from "react-bootstrap/Tabs";
 
 function Projects() {
   return (
-    <div className={styles.color}>
-      <h3 className={styles.pHeading}>Projects.</h3>
+    <div className={projectStyles.color}>
+      <h3 className={projectStyles.pHeading}>Projects.</h3>
 
-      <section>
+      <section className={projectStyles.tabWrapper}>
         <Tabs
           defaultActiveKey="all"
           id="uncontrolled-tab-example"
           // className="mb-3"
         >
-          <Tab eventKey="all" title="All" className={styles.Tab}>
+          <Tab eventKey="all" title="All" className={projectStyles.Tab}>
             <ProjectPortfolio />
           </Tab>
-          <Tab eventKey="designs" title="Designs"className={styles.Tab}>
+          <Tab eventKey="designs" title="Designs"className={projectStyles.Tab}>
             <ProjectPortfolio />
           </Tab>
-          <Tab eventKey="Dev Projects" title="Dev Projects"className={styles.Tab}>
+          <Tab eventKey="Dev Projects" title="Dev Projects"className={projectStyles.Tab}>
             <ProjectPortfolio />
           </Tab>
         </Tabs>
       </section>
-      <div className={styles.next}>
-        <h5>See My Recent Work</h5>
-        <div className={styles.lottieDir}>
-          <Lottie animationData={animationData} />
-        </div>
-      </div>
+      <div className={projectStyles.nextHome}>
+            <h5 className={projectStyles.next}>See My Recent Work</h5>
+              <Lottie animationData={animationData} className={projectStyles.arrow}/>
+          </div>
     </div>
   );
 }
