@@ -1,10 +1,10 @@
 .wrapper {
-    padding: 40px 100px 30px 100px;
+    padding: 40px 100px 40px 100px;
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
 }
 .pHeading{
     margin-bottom: 20px;

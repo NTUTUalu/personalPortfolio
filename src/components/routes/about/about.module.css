@@ -1,13 +1,13 @@
 .color{
   /* background-color: #df9292; */
   margin: 0px 0px 40px 0px;
-  padding: 0px;
+  padding: 0px 100px 0px 100px;
 }
 .wrapper {
   width: 100%;
   height: 60vh;
   display: flex;
-  padding: 0px 100px 0px 100px;
+
   /* background-color: blue; */
   margin: 40px 0px 50px 0px;
 }
@@ -92,7 +92,6 @@
   margin: 180px 0px 150px 0px;
   width: 100%;
   height: 60vh;
-  padding: 10px 100px 0px 100px;
   /* background-color: #642020; */
 }
 .leftskills {
@@ -134,7 +133,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px 100px 10px 100px;
+
   /* background-color: blue; */
   width: 100%;
   height: auto;
@@ -179,7 +178,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px 100px 0px 100px;
     /* background-color: black; */
     width: 100%;
     height: 90vh;
@@ -192,24 +190,8 @@
     padding: 20px;
 }
  
-  .next {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    /* background-color: blue; */
-    height: 40px;
-    padding: 0px 100px 0px 100px;
-    margin-bottom: 50px;
-  }
-.lottieDir {
-    /* transform: scaleX(-1); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 20px;
-    /* background-color: blue; */
-  }
+
+
 
 /* working on progressing to the next */
 .nextHome {
@@ -219,7 +201,6 @@
   /* background-color: blue; */
   margin-bottom: 40px;
   height: 50px;
-  padding: 0px 0px 0px 100px;
   
 }
 
