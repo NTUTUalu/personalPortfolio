@@ -4,7 +4,8 @@ import skillSet from "../../images/skillComposition.svg";
 import books from "../../images/favbooks.svg";
 import random from "../../images/randomFacts.json";
 import Lottie from "lottie-react";
-import animationData from "../../images/arrow.json"
+import animationData from "../../images/arrow.json";
+import {Outlet, Link} from "react-router-dom";
 
 function About() {
   return (
@@ -64,10 +65,12 @@ function About() {
       <section className={AboutStyles.graph}>
         <img src={books} className={AboutStyles.books} />
       </section>
-      <div className={AboutStyles.nextHome}>
+    
+       <div className={AboutStyles.nextHome}>
             <h5 className={AboutStyles.next}>Projects Page</h5>
-              <Lottie animationData={animationData} className={AboutStyles.arrow}/>
+            <Link to={`/projects/1`}><Lottie animationData={animationData} className={AboutStyles.arrow}/></Link>
           </div>
+     
     </div>
   );
 }

@@ -9,6 +9,8 @@ import ProjectPortfolio from "../projectPortfolio/projectPortfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import {Link} from "react-router-dom";
+
 
 function Projects() {
   return (
@@ -32,10 +34,13 @@ function Projects() {
           </Tab>
         </Tabs>
       </section>
+      
+     
       <div className={projectStyles.nextHome}>
-            <h5 className={projectStyles.next}>See My Recent Work</h5>
-              <Lottie animationData={animationData} className={projectStyles.arrow}/>
-          </div>
+            <h5 className={projectStyles.next}>Connect with me</h5> <Link to={`/contact/1`}>
+              <Lottie animationData={animationData} className={projectStyles.arrow}/></Link>
+          </div> 
+          
     </div>
   );
 }

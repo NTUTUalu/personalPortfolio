@@ -2,6 +2,7 @@ import contactStyles from "./contact.module.css";
 import { Form } from "react-router-dom";
 import Lottie from "lottie-react";
 import animationData from "../../images/arrow.json";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -16,10 +17,16 @@ function Contact() {
             <textarea type="text" placeholder="Message" maxLength="50" />
             <button type="submit">Send Message</button>
           </Form>
-          <div className={contactStyles.nextHome}>
-            <h5 className={contactStyles.next}>Home Page</h5>
-              <Lottie animationData={animationData} className={contactStyles.arrow}/>
-          </div>
+         
+            <div className={contactStyles.nextHome}>
+              <h5 className={contactStyles.next}>Home Page</h5>
+              <Link to={`/`}>
+              <Lottie
+                animationData={animationData}
+                className={contactStyles.arrow}
+              /> </Link>
+            </div>
+         
         </section>
       </div>
     </>
