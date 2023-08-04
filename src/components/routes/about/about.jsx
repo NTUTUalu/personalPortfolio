@@ -15,7 +15,7 @@ function About() {
           <h3>About Me.</h3>
           <h5>
             I am a frontend developer currently studying at the African
-            Leadership University
+            Leadership University.
           </h5>
           <p>
             Since beggining my coding journey 2 years ago, it has really been
@@ -27,6 +27,74 @@ function About() {
           <img
             className={AboutStyles.mood}
             src="../src/components/images/React.png"
+          />
+        </div>
+      </div>
+      <div className={AboutStyles.wrapper}>
+        <div className={AboutStyles.left}>
+          <h3>About Me.</h3>
+          <h5>
+            My dream destination is Canada.
+          </h5>
+          <p>
+            I have seen youtube videos of techies having jobs in Canada, their "Day in their lives as Software Engineers" videos on youtube are definitely a bomb! Their content really inspires me as an ever growing software developer. 
+          </p>
+        </div>
+        <div className={AboutStyles.right}>
+          <img
+            className={AboutStyles.mood}
+            src="../src/components/images/Canada-flag.jpg"
+          />
+        </div>
+      </div>
+      <div className={AboutStyles.wrapper}>
+        <div className={AboutStyles.left}>
+          <h3>About Me.</h3>
+          <h5>
+            Atomic habits. What a fantastic book! 
+          </h5>
+          <p>
+            I am low-key interested in building an app that is in correlation to what I learnt from reading this book. It is a great book which I recommend for anyone trying to break bad habits, this book will definitely help them thrive. 
+          </p>
+        </div>
+        <div className={AboutStyles.right}>
+          <img
+            className={AboutStyles.mood}
+            src="../src/components/images/habits.jpg"
+          />
+        </div>
+      </div>
+      <div className={AboutStyles.wrapper}>
+        <div className={AboutStyles.left}>
+          <h3>About Me.</h3>
+          <h5>
+            {`( ^ ~ ^ ) -->`} Breakfast + Lunch = Brunch.
+          </h5>
+          <p>
+            Rather than have breakfast then later, lunch. I prefer having a late breakfast at around 10 a.m which I refer to as "brunch." This is a habit that honestly comes from a budget stricken life of a college student. Lol, Tough times never last!
+          </p>
+        </div>
+        <div className={AboutStyles.right}>
+          <img
+            className={AboutStyles.mood}
+            src="../src/components/images/LetsDoBrunch.jpg"
+          />
+        </div>
+      </div>
+      <div className={AboutStyles.wrapper}>
+        <div className={AboutStyles.left}>
+          <h3>About Me.</h3>
+          <h5>
+            Kevin De Bruyne is my current favorite player in the English Premier League.
+          </h5>
+          <p>
+          Being a supporter of great football, it goes without a doubt that my heart will gravitate towards favoritism of players that play the kind of style I like. Kevin De Bruyne is that magician for me. His ability to give fantastic assists to strikers is out of this world. He is the king of modern football.
+          </p>
+        </div>
+        <div className={AboutStyles.right}>
+          <img
+            className={AboutStyles.mood}
+            src="../src/components/images/kdb.jpg"
           />
         </div>
       </div>
