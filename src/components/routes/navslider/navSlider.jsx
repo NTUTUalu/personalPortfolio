@@ -1,6 +1,8 @@
 import styles from "./navSlider.module.css"
 
 function NavSlider() {
+
+ 
     return <>
     <div className={styles.slider}>
         <div className={styles.sliderRow}>
