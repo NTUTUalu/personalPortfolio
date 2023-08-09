@@ -18,19 +18,15 @@ function Projects() {
       <h3 className={projectStyles.pHeading}>Projects.</h3>
 
       <section className={projectStyles.tabWrapper}>
-        <Tabs
-          defaultActiveKey="all"
-          id="uncontrolled-tab-example"
-          // className="mb-3"
-        >
+        <Tabs defaultActiveKey="all" id="uncontrolled-tab-example">
           <Tab eventKey="all" title="All" className={projectStyles.Tab}>
-            <ProjectPortfolio />
+            <ProjectPortfolio filterCriteria="all" />
           </Tab>
-          <Tab eventKey="designs" title="Designs"className={projectStyles.Tab}>
-            <ProjectPortfolio />
+          <Tab eventKey="designs" title="Designs" className={projectStyles.Tab}>
+            <ProjectPortfolio filterCriteria="design" />
           </Tab>
-          <Tab eventKey="Dev Projects" title="Dev Projects"className={projectStyles.Tab}>
-            <ProjectPortfolio />
+          <Tab eventKey="Dev Projects" title="Dev Projects" className={projectStyles.Tab}>
+            <ProjectPortfolio filterCriteria="website" />
           </Tab>
         </Tabs>
       </section>
