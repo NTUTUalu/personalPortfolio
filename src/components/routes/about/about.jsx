@@ -9,12 +9,16 @@ import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 
 function About() {
-  let index = 0;
+
   const [intro, newIntro] = useState(aboutList[0].intro);
   const [details, newDetails] = useState(aboutList[0].details);
   const [image, newImage] = useState(aboutList[0].image);
   
-
+  function changeUI(index) {
+    newIntro(aboutList[index].intro);
+    newDetails(aboutList[index].details);
+    newImage(aboutList[index].image);
+  }
  
 
   return (
@@ -32,7 +36,7 @@ function About() {
           />
         </div>
       </div>
-      <NavSlider />
+      <NavSlider changeDetails={changeUI}/>
       <div className={AboutStyles.skills}>
         <div className={AboutStyles.leftskills}>
           <h3>Frontend developer</h3>
@@ -99,7 +103,7 @@ const aboutList = [
     image: "../src/components/images/habits.jpg",
   },
   {
-    intro: "{`( ^ ~ ^ ) -->`} Breakfast + Lunch = Brunch.",
+    intro: "Breakfast + Lunch = Brunch.",
     details:
       '    Rather than have breakfast then later, lunch. I prefer having a late breakfast at around 10 a.m which I refer to as "brunch." This is a habit that honestly comes from a budget stricken life of a college student. Lol, Tough times never last!',
     image: "../src/components/images/LetsDoBrunch.jpg",
