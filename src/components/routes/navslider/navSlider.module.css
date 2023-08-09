@@ -37,3 +37,8 @@
     
    border: 4px solid rgba(211, 211, 211, 0.288); 
 }
+
+.active {
+    filter: brightness(50%);
+    border-radius: 30px;
+}

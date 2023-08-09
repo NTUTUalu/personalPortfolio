@@ -5,21 +5,19 @@ import books from "../../images/favbooks.svg";
 import random from "../../images/randomFacts.json";
 import Lottie from "lottie-react";
 import animationData from "../../images/arrow.json";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function About() {
-
   const [intro, newIntro] = useState(aboutList[0].intro);
   const [details, newDetails] = useState(aboutList[0].details);
   const [image, newImage] = useState(aboutList[0].image);
-  
+
   function changeUI(index) {
     newIntro(aboutList[index].intro);
     newDetails(aboutList[index].details);
     newImage(aboutList[index].image);
   }
- 
 
   return (
     <div className={AboutStyles.color}>
@@ -30,13 +28,10 @@ function About() {
           <p>{details}</p>
         </div>
         <div className={AboutStyles.right}>
-          <img
-            className={AboutStyles.mood}
-            src={image}
-          />
+          <img className={AboutStyles.mood} src={image} />
         </div>
       </div>
-      <NavSlider changeDetails={changeUI}/>
+      <NavSlider changeDetails={changeUI} aboutList={aboutList} />
       <div className={AboutStyles.skills}>
         <div className={AboutStyles.leftskills}>
           <h3>Frontend developer</h3>
