@@ -6,30 +6,38 @@ function Projectportfolio({ filterCriteria }) {
     {
       src: "../src/components/images/KFC.png",
       alt: "design",
+      href2: "https://www.behance.net/gallery/160675629/KFC-mobile-design-app"
     },
     {
       src: "../src/components/images/PMPICTURES.png",
       alt: "design",
+      href2: "https://www.behance.net/gallery/161085587/PM-PICTURES"
     },
     {
       src: "../src/components/images/E-Health.png",
       alt: "design",
+      href2: "https://www.behance.net/gallery/167922099/E-Health-Africa"
     },
     {
       src: "../src/components/images/Cutlery.png",
       alt: "design",
+      href2: "https://www.behance.net/gallery/164729167/Cuttlery-e-commerce-store"
     },
     {
       src: "../src/components/images/logitechweb.png",
       alt: "website",
+      href2: "https://logitechconsultancy.vercel.app/"
     },
     {
       src: "../src/components/images/CodeWars.png",
       alt: "design",
+      href2: "https://www.behance.net/gallery/160531243/Code-wars-website"
+      
     },
     {
       src: "../src/components/images/logitech.png",
       alt: "design",
+      href2: "https://www.behance.net/gallery/156179299/Logitech-consultancy"
     },
   ];
 
@@ -43,7 +51,9 @@ function Projectportfolio({ filterCriteria }) {
       <div className={styles.gridContainer}>
         {filteredProjects.map((project, index) => (
           <div className={styles.gridItem} key={index}>
-            <img className={styles.mood} src={project.src} alt={project.alt} />
+            <a href={project.href2} target="_blank" rel="noopener noreferrer">
+            <img className={styles.mood} src={project.src} alt={project.alt} 
+       /></a>
           </div>
         ))}
       </div>
