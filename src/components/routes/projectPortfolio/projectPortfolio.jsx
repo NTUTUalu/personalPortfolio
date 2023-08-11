@@ -1,8 +1,11 @@
+import React from "react";
 import styles from "./projectPortfolio.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Projectportfolio({ filterCriteria }) {
   const projects = [
+    // ... your project data
+    // ... your project data
     {
       src: "../src/components/images/KFC.png",
       alt: "design",
@@ -41,6 +44,13 @@ function Projectportfolio({ filterCriteria }) {
     },
   ];
 
+  const handleImageClick = (href2) => {
+    const confirmed = window.confirm("You are about to be redirected to a different link. Continue?");
+    if (confirmed) {
+      window.open(href2, "_blank");
+    }
+  };
+
   const filteredProjects =
     filterCriteria === "all"
       ? projects
@@ -51,9 +61,9 @@ function Projectportfolio({ filterCriteria }) {
       <div className={styles.gridContainer}>
         {filteredProjects.map((project, index) => (
           <div className={styles.gridItem} key={index}>
-            <a href={project.href2} target="_blank" rel="noopener noreferrer">
-            <img className={styles.mood} src={project.src} alt={project.alt} 
-       /></a>
+            <a href={project.href2} target="_blank" rel="noopener noreferrer" onClick={() => handleImageClick(project.href2)}>
+              <img className={styles.mood} src={project.src} alt={project.alt} />
+            </a>
           </div>
         ))}
       </div>
