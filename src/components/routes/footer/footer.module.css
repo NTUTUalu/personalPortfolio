@@ -38,4 +38,9 @@
     font-weight: bold;
     background-color: rgb(94, 93, 91);
     
+    
+}
+
+.bottom a {
+    text-decoration: none;
 }

@@ -3,9 +3,9 @@ import styles from "./projectPortfolio.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Projectportfolio({ filterCriteria }) {
+ 
+  
   const projects = [
-    // ... your project data
-    // ... your project data
     {
       src: "../src/components/images/KFC.png",
       alt: "design",
