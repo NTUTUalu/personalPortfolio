@@ -5,6 +5,10 @@
     flex-direction: column;
     height: 100%;
     /* background-color: blueviolet; */
+    /* background-image: url("../../images/2.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 .pHeading{
     margin-bottom: 20px;
@@ -26,6 +30,7 @@ p{
     margin: 0px;
     height: 100%;
     
+    
 }
 Form {
     display: grid;
@@ -41,17 +46,19 @@ input {
     width: 60%;
     height: auto;
     border-radius: 5px;
-    border: 3px solid grey;
+    border: 3px solid rgb(156, 156, 156);
     padding: 7px 20px 7px 10px;
     font-size: 13px;
     letter-spacing: 0.5px;
     color: white;
     font-weight:500;
     letter-spacing: 1.5px;
+    background-color:rgba(245, 245, 245, 0.90);
+
 }
 textarea {
     border-radius: 5px;
-    border: 3px solid grey;
+    border: 3px solid rgb(156, 156, 156);
     padding: 4px 20px 0px 10px;
     letter-spacing: 0.5px;
     font-size: 13px;
@@ -64,6 +71,7 @@ textarea {
     color: white;
     font-weight:500;
     letter-spacing: 1.5px;
+    background-color:rgba(245, 245, 245, 0.9);
     
 }
 
@@ -72,11 +80,12 @@ button{
     height: 35px;
     width: 170px;
     border-radius: 5px;
-   border: none;
+   border: 2px solid lightgrey;
     font-size: 15px;
     font-weight: 600;
-    background-color: rgb(236, 236, 236);
-    color: black;
+    background-color: rgba(75, 75, 75, 0.9);
+    color: white;
+
 }
 
 /* working on progressing to the next */

@@ -137,7 +137,8 @@
   /* background-color: blue; */
   width: 100%;
   height: auto;
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
+  
 }
 .leftAnimation {
     width: 50%;
@@ -146,6 +147,8 @@
     flex-direction: column;
     align-content: flex-start;
     /* background-color: aqua; */
+    border-right: 2px solid gray ;
+
 }
 .rightAnimation {
     display: flex;
@@ -155,7 +158,6 @@
     width: auto;
     /* background-color: rgb(255, 255, 255); */
     position: relative;
-
 }
 
 .rightAnimation h1{

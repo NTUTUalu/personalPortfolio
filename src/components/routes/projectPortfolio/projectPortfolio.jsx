@@ -44,10 +44,10 @@ function Projectportfolio({ filterCriteria }) {
     },
   ];
 
-  const handleImageClick = (href2) => {
+  const handleImageClick = (event, href2) => {
     const confirmed = window.confirm("You are about to be redirected to a different link. Continue?");
-    if (confirmed) {
-      window.open(href2, "_blank");
+    if (!confirmed) {
+      event.preventDefault(); // Prevent default link behavior if not confirmed
     }
   };
 
@@ -61,7 +61,7 @@ function Projectportfolio({ filterCriteria }) {
       <div className={styles.gridContainer}>
         {filteredProjects.map((project, index) => (
           <div className={styles.gridItem} key={index}>
-            <a href={project.href2} target="_blank" rel="noopener noreferrer" onClick={() => handleImageClick(project.href2)}>
+            <a href={project.href2} target="_blank" rel="noopener noreferrer" onClick={(e) => handleImageClick(e,project.href2)}>
               <img className={styles.mood} src={project.src} alt={project.alt} />
             </a>
           </div>

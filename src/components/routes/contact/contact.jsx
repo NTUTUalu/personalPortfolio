@@ -38,7 +38,7 @@ function Contact() {
     <>
       <div className={contactStyles.wrapper}>
         <h3 className={contactStyles.pHeading}>Contact.</h3>
-        <p>Connect with me directly through my email, Solvene@gmail.com</p>
+        <p>Connect with me directly through my email. Thanks in advance!</p>
         <section className={contactStyles.formWrapper}>
           <Form onSubmit={handleSubmit}>
             <input

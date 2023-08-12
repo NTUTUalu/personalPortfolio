@@ -7,11 +7,10 @@
   padding: 0px 20px 0px 20px;
   /* background-color: #242424; */
   /* height: auto; */
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  
 }
 
-h3 {
-  color: rgb(17, 235, 17);
-}
 
 .links {
   display: flex;

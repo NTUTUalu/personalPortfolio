@@ -42,7 +42,12 @@
   /* min-width: 700px; */
   height: auto;
   position: relative;
+  
  }
+ .Tab a {
+  text-decoration: none; /* Remove text decoration */
+  color: inherit; 
+}
 
  /* grid styling  */
  .gridContainer {

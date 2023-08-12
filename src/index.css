@@ -20,12 +20,16 @@ body {
   height: auto;
   margin: 0px;
   padding: 0px;
+  background-image: url("../src/components/images/a.jpg"); /* Set the background image path */
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
 
 }
 
 * {
   box-sizing: border-box;
-  background-color: #423f3f;
-  margin: 0px;
-  padding: 0px;
+  
 }
