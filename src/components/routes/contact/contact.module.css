@@ -46,19 +46,19 @@ input {
     width: 60%;
     height: auto;
     border-radius: 5px;
-    border: 3px solid rgb(156, 156, 156);
+    border: 3px solid rgb(90, 90, 90);
     padding: 7px 20px 7px 10px;
     font-size: 13px;
     letter-spacing: 0.5px;
     color: white;
     font-weight:500;
     letter-spacing: 1.5px;
-    background-color:rgba(245, 245, 245, 0.90);
+    background-color:rgba(245, 245, 245, 0.0);
 
 }
 textarea {
     border-radius: 5px;
-    border: 3px solid rgb(156, 156, 156);
+    border: 3px solid rgb(90, 90, 90);
     padding: 4px 20px 0px 10px;
     letter-spacing: 0.5px;
     font-size: 13px;
@@ -71,7 +71,7 @@ textarea {
     color: white;
     font-weight:500;
     letter-spacing: 1.5px;
-    background-color:rgba(245, 245, 245, 0.9);
+    background-color:rgba(245, 245, 245, 0);
     
 }
 
@@ -80,10 +80,10 @@ button{
     height: 35px;
     width: 170px;
     border-radius: 5px;
-   border: 2px solid lightgrey;
+    border: 3px solid rgb(90, 90, 90);
     font-size: 15px;
     font-weight: 600;
-    background-color: rgba(75, 75, 75, 0.9);
+    background-color: rgba(75, 75, 75, 0);
     color: white;
 
 }
