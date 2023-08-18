@@ -44,3 +44,18 @@
 .bottom a {
     text-decoration: none;
 }
+
+/* Small devices (portrait phones) */
+@media screen and (max-width: 480px) {
+    /* Your styles for small devices here */
+}
+
+/* Medium devices (landscape phones and small tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your styles for medium devices here */
+}
+
+/* Large devices (tablets and large phones) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Your styles for large devices here */
+}
