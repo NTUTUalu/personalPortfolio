@@ -2,6 +2,8 @@ import NavigationStyles from  "./navigation.module.css";
 import "../home/navigation.module.css";
 import lightIcon from "../../images/icons8-sun.svg";
 import darkIcon from "../../images/icons8-code.svg";
+import openNav from "../../images/x-menu.png"
+import closeNav from "../../images/menu.png"
 import "./home.module.css";
 import { Outlet,  Link} from "react-router-dom";
 import Footer from '../footer/footer';
@@ -19,8 +21,11 @@ function Navigation() {
           </li>
           <li><Link to={`projects/1`}className={NavigationStyles.links}>Projects</Link></li>
           <li><Link to={`contact/1`} className={NavigationStyles.links}>Contact</Link></li>
+          <img  src={lightIcon} />
         </ul>
-        <img src={lightIcon} />
+       
+        <img className={NavigationStyles.openNav} src={openNav}/>
+        <img className={NavigationStyles.closeNav} src={closeNav}/>
       </div>
     </nav>
     

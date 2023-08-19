@@ -1,9 +1,9 @@
 .container {
-    margin: 70px 0px 20px 0px;
+   
     display: flex;
     width: 100%;
     height: 70vh;
-    /* background-color: blue; */
+    background-color: blue;
     padding: 0px 100px 0px 100px;
     margin: 70px 0px 30px 0px;
   }
@@ -13,6 +13,7 @@
     margin-bottom: 20px;
     font-size: 25px;
   }
+
   .front p {
     color: rgba(255, 255, 255, 0.49);
     width: 100%;
@@ -28,7 +29,7 @@
     justify-content: space-between;
   }
 .front {
- /* background-color: gray; */
+ background-color: gray;
  display: flex;
  justify-content: space-between;
  flex-direction: column;
@@ -36,7 +37,7 @@
  width: 50%;
 }
 .designer {
-    /* background-color: lightgrey; */
+    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     justify-content:end;
@@ -123,6 +124,54 @@
 /* Medium devices (landscape phones and small tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Your styles for medium devices here */
+  .container {
+    margin: 40px 0px 20px 0px;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    /* background-color: blue; */
+    padding: 0px 40px 0px 40px;
+    
+  }
+
+  .front h2{
+    font-size: 24px;
+  }
+
+  .designer h3 {
+    
+    font-size: 22px;
+  }
+  
+  .front h3 {
+    
+    font-size: 22px;
+  }
+  
+
+  .front {
+    padding: 0px;
+    width: 60%;
+   }
+   .designer {
+     
+       width: 40%;
+       
+     }
+
+     .front p{
+      /* background-color: aqua; */
+      width: 90%;
+      letter-spacing: 1.2px;
+      line-height: 20px;
+     }
+     .designer p{
+       /* background-color: aqua; */
+         width: 90%;
+         letter-spacing: 1.2px;
+         line-height: 20px;
+         
+       }
 }
 
 /* Large devices (tablets and large phones) */

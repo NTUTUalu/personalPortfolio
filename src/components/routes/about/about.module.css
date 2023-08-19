@@ -230,6 +230,10 @@
 /* Small devices (portrait phones) */
 @media screen and (max-width: 480px) {
   /* Your styles for small devices here */
+  .graph {
+    display: none;
+    
+}
 }
 
 /* Medium devices (landscape phones and small tablets) */

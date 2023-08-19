@@ -41,14 +41,46 @@
   /* background-color: blue; */
 }
 
+.openNav {
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+
+.closeNav {
+  display: none;
+  height: 30px;
+  width: 25px;
+}
+
 /* Small devices (portrait phones) */
 @media screen and (max-width: 480px) {
   /* Your styles for small devices here */
+  .navLinks ul{
+    display: none;
+  
+  }
+  .closeNav {
+    display: inline;
+    
+  }
+  .openNav {
+    display:inline;
+    
+  }
 }
 
 /* Medium devices (landscape phones and small tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Your styles for medium devices here */
+  .Navigation {
+
+    margin: 30px 40px 0px 40px;
+    
+    
+  }
+  
+ 
 }
 
 /* Large devices (tablets and large phones) */
