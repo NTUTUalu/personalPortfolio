@@ -7,7 +7,6 @@
     margin-top: 50px;
     /* background-color: aqua; */
   
-
 }
 .sliderRow{
     display: flex;
@@ -17,6 +16,7 @@
     align-items: center;
     border-top: 2px solid lightgray;
     /* background-color: aliceblue; */
+
 }
 
 .navImages {
@@ -51,6 +51,25 @@
 /* Medium devices (landscape phones and small tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Your styles for medium devices here */
+    .slider{  
+        /* background-color: aqua; */
+        margin-top: 40px;
+      
+    }
+    .sliderRow{  
+        /* background-color: aqua; */
+        justify-content:space-between ;
+        padding: 0px;
+        margin: 0px;
+      
+    }
+
+    .navImages {
+        width: 120px;
+        height: 120px;
+        
+       
+    }
 }
 
 /* Large devices (tablets and large phones) */

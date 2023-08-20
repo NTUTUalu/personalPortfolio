@@ -112,6 +112,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  /* background-color: aquamarine; */
 }
 .skillset {
   width: 300px;
@@ -133,19 +134,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  align-items: flex-start;
   /* background-color: blue; */
   width: 100%;
-  height: auto;
+  height: 60vh;
   margin: 0px 0px 20px 0px;
   
 }
+.lottie {
+  height: 100%;
+}
+
 .leftAnimation {
     width: 50%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
     /* background-color: aqua; */
     border-right: 2px solid rgb(90, 90, 90);
 
@@ -239,6 +243,98 @@
 /* Medium devices (landscape phones and small tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Your styles for medium devices here */
+  .wrapper {
+   display: flex;
+   margin: 40px 0px 0px 0px;
+   /* flex-direction:column-reverse;  */   
+    /* background-color: #df9292; */
+
+  }
+
+  .color{
+    /* background-color: #df9292; */
+    margin: 0px 0px 40px 0px;
+    padding: 0px 40px 0px 40px;
+  }
+  .mood {
+    height: 190px;
+    width: 250px;
+    margin-top: 90px;
+    
+  }
+
+  .left h5{
+    width: 80%;
+    font-size: 16px;
+   
+  }
+  
+  .left p {
+    width: 90%;
+    line-height: 23px;
+    font-size: 14px;
+    
+  }
+
+  /*? skills section */
+
+  .skills {
+    display: flex;
+    margin: 150px 0px 150px 0px;
+    width: 100%;
+    height: 40vh;
+    /* background-color: #642020; */
+  }
+
+  .skills h3{
+    font-size: 20px;
+  }
+  
+  .skills h5{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .skillset {
+    width: 80%;
+    height:fit-content;
+    /* background-color: blue; */
+
+  
+  }
+  /*? random facts section */
+
+  .leftAnimation {
+  
+    height: 70%;
+}
+
+  
+.rightAnimation h1{
+  font-size: 22px;
+  
+}
+.rightAnimation {
+  margin-left: 10px;
+}
+
+.rightAnimation h5{
+  
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+  /* books section */
+  .books {
+    height:90%;
+    /* background-color: blue; */
+  }
+  .graph {
+    height:70vh;
+    /* background-color: green; */
+  }
+
 }
 
 /* Large devices (tablets and large phones) */

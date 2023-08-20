@@ -52,7 +52,7 @@ function About() {
       </div>
       <section className={AboutStyles.randomFacts}>
         <div className={AboutStyles.leftAnimation}>
-          <Lottie animationData={random} />
+          <Lottie className={AboutStyles.lottie} animationData={random} />
         </div>
         <div className={AboutStyles.rightAnimation}>
           <h1>Random facts</h1>
