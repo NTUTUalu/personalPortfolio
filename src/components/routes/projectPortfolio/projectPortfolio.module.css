@@ -33,6 +33,21 @@
 /* Medium devices (landscape phones and small tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Your styles for medium devices here */
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    /* background-color: #f01616; */
+    height: 100%;
+    gap: 20px 25px;
+    padding: 0px;
+    margin: 0px;
+   }
+   .gridItem{
+    height: 200px;
+    /* background-color: black; */
+    position: relative;
+   }
 }
 
 /* Large devices (tablets and large phones) */
