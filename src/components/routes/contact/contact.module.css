@@ -34,7 +34,7 @@ p{
 }
 Form {
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr ;
+    grid-template-rows: 1/2fr 1/2fr 3fr ;
     gap: 10px;
     /* background-color: blue; */
     height: 100%;
@@ -72,7 +72,7 @@ textarea {
     font-weight:500;
     letter-spacing: 1.5px;
     background-color:rgba(245, 245, 245, 0);
-    
+    resize: none;
 }
 
 button{
@@ -129,6 +129,36 @@ button{
 /* Medium devices (landscape phones and small tablets) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* Your styles for medium devices here */
+    input {
+        width: 60%;
+        height: 34px;
+        border-radius: 5px;
+        border: 3px solid rgb(90, 90, 90);
+        padding: 7px 20px 7px 10px;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        color: white;
+        font-weight:500;
+        letter-spacing: 1.5px;
+        background-color:rgba(245, 245, 245, 0.0);
+    
+    }
+    textarea {
+        min-height: 120px;
+        min-width: 120px;
+        max-height: 120px;
+    }
+    p{
+        font-size: 14px;
+        width: 70vw;
+        /* background-color: aqua; */
+        letter-spacing: 1px;
+        color: white;
+    }
+    Form {
+        width: 60vw;
+        
+    }
 }
 
 /* Large devices (tablets and large phones) */
