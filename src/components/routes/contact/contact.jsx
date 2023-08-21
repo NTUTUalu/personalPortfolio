@@ -30,7 +30,6 @@ function Contact() {
       return;
     }
 
-    // Send the form data to your backend or perform further actions
     console.log("Form submitted:", { name, email, message });
   }
 
