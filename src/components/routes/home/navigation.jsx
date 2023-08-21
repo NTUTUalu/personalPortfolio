@@ -13,7 +13,7 @@ function Navigation() {
   return (
     <>
     <nav className={NavigationStyles.Navigation}>
-      <Link to={'/'}><img src={darkIcon} style={{width:'40px', height:'40px'}}/></Link>
+      <Link to={'/'}><img src={darkIcon} style={{width:'40px', height:'40px'}} className={NavigationStyles.goingHome}/></Link>
       <div className={NavigationStyles.navLinks}>
         <ul>
           <li>

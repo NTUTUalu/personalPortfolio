@@ -65,8 +65,23 @@
     
   }
   .openNav {
-    display:inline;
+    display:none;
     
+  }
+  .Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    /* background-color: #242424; */
+    /* height: auto; */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    
+  }
+  .goingHome {
+    display: inline;
   }
 }
 

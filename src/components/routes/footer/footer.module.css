@@ -48,6 +48,36 @@
 /* Small devices (portrait phones) */
 @media screen and (max-width: 480px) {
     /* Your styles for small devices here */
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+    }
+    .copyright h5{
+        font-size: 14px;
+        font-weight:500;
+        color: rgb(255, 255, 255,0.5);
+        
+    }
+    .copyright{
+        display: flex;
+        justify-content:space-around;
+        background-color: rgb(94, 93, 91);
+        width:130px;
+    }
+    .bottom h3{
+        color: rgb(255, 255, 255,0.4);
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 300;
+        
+    }
+    .bottom a {
+        text-decoration:underline solid 2px;
+        color:rgba(210, 105, 30, 0.41);
+    }
+  
 }
 
 /* Medium devices (landscape phones and small tablets) */
