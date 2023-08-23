@@ -6,7 +6,8 @@ import random from "../../images/randomFacts.json";
 import Lottie from "lottie-react";
 import animationData from "../../images/arrow.json";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 function About() {
   const [intro, newIntro] = useState(aboutList[0].intro);
@@ -19,18 +20,59 @@ function About() {
     newImage(aboutList[index].image);
   }
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if the viewport width is below the mobile threshold
+  const checkIsMobile = () => {
+    setIsMobile(window.innerWidth <= 768); // Adjust the threshold as needed
+  };
+
+  useEffect(() => {
+    checkIsMobile(); // Initial check
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
   return (
+    
     <div className={AboutStyles.color}>
-      <div className={AboutStyles.wrapper}>
-        <div className={AboutStyles.left}>
-          <h3>About Me.</h3>
-          <h5>{intro}</h5>
-          <p>{details}</p>
+       
+      {isMobile ? (
+        // If on mobile, render the carousel
+        
+        <Carousel className={AboutStyles.wrapper2} slide={false}>
+          {aboutList.slice(0, 5).map((item, index) => (
+            <Carousel.Item key={index}interval={18000}>
+              <div className={AboutStyles.right}>
+                
+                <div className={AboutStyles.right}>
+                  
+                  <img className={AboutStyles.mood2} src={item.image} alt={`Slide ${index}`} />
+                </div>
+              </div>
+              <h3>About Me.</h3>
+              <h5>{item.intro}</h5>
+              <p>{item.details}</p>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      ) : (
+        // If not on mobile, render your existing content
+        <div className={AboutStyles.wrapper}>
+          <div className={AboutStyles.left}>
+            <h3>About Me.</h3>
+            <h5>{intro}</h5>
+            <p>{details}</p>
+          </div>
+          
+          <div className={AboutStyles.right}>
+            <img className={AboutStyles.mood} src={image}  />
+          </div>
         </div>
-        <div className={AboutStyles.right}>
-          <img className={AboutStyles.mood} src={image} />
-        </div>
-      </div>
+      )}
+
       <NavSlider changeDetails={changeUI} aboutList={aboutList} />
       <div className={AboutStyles.skills}>
         <div className={AboutStyles.leftskills}>

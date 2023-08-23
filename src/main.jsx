@@ -15,6 +15,7 @@ import Contact from './components/routes/contact/contact'
 import ErrorPage from "./components/routes/error-page/error-page";
 import "./components/routes/about/about";
 // import About from './components/routes/about/about';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {
