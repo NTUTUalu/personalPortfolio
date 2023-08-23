@@ -28,6 +28,21 @@
   /* Small devices (portrait phones) */
 @media screen and (max-width: 480px) {
   /* Your styles for small devices here */
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    /* background-color: #f01616; */
+    height: 100%;
+    gap: 20px 10px;
+    padding: 0px;
+    margin: 0px;
+   }
+
+   .gridItem{
+    height: 170px;
+   
+   }
 }
 
 /* Medium devices (landscape phones and small tablets) */

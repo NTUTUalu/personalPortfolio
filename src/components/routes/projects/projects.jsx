@@ -10,15 +10,34 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import {Link} from "react-router-dom";
-
+import React, { useState, useEffect } from 'react';
 
 function Projects() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 480);
+    };
+
+    // Initial call to set initial state
+    handleResize();
+
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   return (
     <div className={projectStyles.color}>
       <h3 className={projectStyles.pHeading}>Projects.</h3>
 
       <section className={projectStyles.tabWrapper}>
-        <Tabs defaultActiveKey="all" id="uncontrolled-tab-example">
+        <Tabs defaultActiveKey="all" id="uncontrolled-tab-example" className={projectStyles.Tabs}  fill={isMobile} >
           <Tab eventKey="all" title="All" className={projectStyles.Tab}>
             <ProjectPortfolio filterCriteria="all" />
           </Tab>
