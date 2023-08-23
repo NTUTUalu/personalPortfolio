@@ -294,7 +294,7 @@
   filter: brightness(0.6);
 }
   .textContainer h5{
-    margin-top: 10px;
+    margin-top: 20px;
     color: rgb(218, 218, 218);
     font-size: 18px;
   }
@@ -303,7 +303,115 @@
     font-size: 14.5px;
     color: rgb(218, 218, 218,0.6);
   }
- 
+
+  .skills {
+    display: flex;
+    flex-direction: column; /* Align divs vertically */
+    height: fit-content;
+    /* background-color: aquamarine; */
+    margin: 70px 0px 100px 0px;
+    /* Additional styling for the container, if needed */
+  }
+  .middle {
+    order: 1; /* Specify the order for the middle div */
+    height: 250px;
+    /* background-color: blue; */
+    filter:brightness(0.8);
+    margin-bottom: 10px;
+  }
+  .leftskills h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  .leftskills h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .skillset{
+    height: 100%;
+  }
+  
+  .leftskills {
+    order: 2; /* Specify the order for the leftskills div */
+    /* background-color: beige; */
+    height: fit-content;
+    
+    
+  }
+  
+  .rightskills {
+    order: 3; /* Specify the order for the rightskills div */
+    /* background-color: rgb(182, 182, 182); */
+  
+  }
+
+  .rightskills h3 {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    
+  }
+  .rightskills h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .middle,
+  .leftskills,
+  .rightskills {
+    width: 100%; /* Make divs occupy the full width */
+    
+    /* Add padding for spacing */
+    /* Additional styling for each div, if needed */
+  }
+
+  /*? styling the RANDOM facts segment */
+  .randomFacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftAnimation{
+    border: none;
+
+  }
+  .rightAnimation h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+  }
+  .rightAnimation h5{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .rightAnimation,
+  .leftAnimation{
+    width: 100%;
+
+  }
+
+  /*? working the graph  */
+  .graph {
+    margin-top: 150px;
+    display: flex;
+    height: fit-content;
+    /* background-color: blue; */
+  }
+  .books {
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    height: 60vh;
+  }
 }
 
 /* Medium devices (landscape phones and small tablets) */
