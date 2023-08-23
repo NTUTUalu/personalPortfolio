@@ -13,11 +13,13 @@ function About() {
   const [intro, newIntro] = useState(aboutList[0].intro);
   const [details, newDetails] = useState(aboutList[0].details);
   const [image, newImage] = useState(aboutList[0].image);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   function changeUI(index) {
     newIntro(aboutList[index].intro);
     newDetails(aboutList[index].details);
     newImage(aboutList[index].image);
+    setActiveIndex(index);
   }
 
   const [isMobile, setIsMobile] = useState(false);
@@ -40,24 +42,26 @@ function About() {
     <div className={AboutStyles.color}>
        
       {isMobile ? (
-        // If on mobile, render the carousel
-        
-        <Carousel className={AboutStyles.wrapper2} slide={false}>
+        <div className={AboutStyles.wrapper2}>
+        {/* Create a separate div for the text content */}
+        <h3>About Me.</h3>
+        <Carousel activeIndex={activeIndex} onSelect={changeUI}>
           {aboutList.slice(0, 5).map((item, index) => (
-            <Carousel.Item key={index}interval={18000}>
-              <div className={AboutStyles.right}>
-                
-                <div className={AboutStyles.right}>
-                  
-                  <img className={AboutStyles.mood2} src={item.image} alt={`Slide ${index}`} />
-                </div>
-              </div>
-              <h3>About Me.</h3>
-              <h5>{item.intro}</h5>
-              <p>{item.details}</p>
+            <Carousel.Item key={index} interval={18000}>
+              {/* Render the image in the carousel */}
+              <img
+                className={AboutStyles.mood2}
+                src={item.image}
+                alt={`Slide ${index}`}
+              />
             </Carousel.Item>
           ))}
         </Carousel>
+        <div className={AboutStyles.textContainer}>
+          <h5>{intro}</h5>
+          <p>{details}</p>
+        </div>
+      </div>
       ) : (
         // If not on mobile, render your existing content
         <div className={AboutStyles.wrapper}>
