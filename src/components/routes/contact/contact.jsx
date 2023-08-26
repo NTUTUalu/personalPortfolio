@@ -4,12 +4,19 @@ import Lottie from "lottie-react";
 import animationData from "../../images/arrow.json";
 import { Link } from "react-router-dom";
 import contactStyles from "./contact.module.css";
+import {db} from "../../../../firebase";
+import {addDoc, collection} from 'firebase/firestore';
 
 function Contact() {
+
+
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
+
+  const userCollectionRef = collection(db, "contactdata");
 
   function handleEmailChange(event) {
     const enteredEmail = event.target.value;
@@ -22,24 +29,38 @@ function Contact() {
     return emailRegex.test(email);
   }
 
-  function handleSubmit(event) {
+ async function handleSubmit(event) {
     event.preventDefault();
-
+    // console.log(db);
     if (!name || !isValidEmail || message.length < 10) {
       alert("Please fill in all fields correctly.");
       return;
     }
+    try {
+      await addDoc(userCollectionRef, {
+        name: name,
+        email: email,
+        message: message,
+      });
 
-    console.log("Form submitted:", { name, email, message });
+      alert("Message has been submitted");
+      setName("");
+      setEmail("");
+      setMessage("");
+
+     // Redirect to the About page
+    } catch (error) {
+      alert("An error occurred while submitting the message.");
+      console.error(error);
+    }
   }
-
   return (
     <>
       <div className={contactStyles.wrapper}>
         <h3 className={contactStyles.pHeading}>Contact.</h3>
         <p>Connect with me directly through my email. Thanks in advance!</p>
         <section className={contactStyles.formWrapper}>
-          <Form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Name"
@@ -74,7 +95,7 @@ function Contact() {
               <p className={contactStyles.error}>Message must be at least 10 characters long.</p>
             )}
             <button type="submit">Send Message</button>
-          </Form>
+          </form>
           <div className={contactStyles.nextHome}>
             <h5 className={contactStyles.next}>Home Page</h5>
             <Link to={`/`}>

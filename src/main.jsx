@@ -17,6 +17,7 @@ import "./components/routes/about/about";
 // import About from './components/routes/about/about';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
