@@ -1,7 +1,7 @@
 import homeStyles from "./home.module.css";
 // import { Lottie } from "@lottiefiles/react-lottie-player"
 import Lottie from "lottie-react"
-import animationData from "../../images/arrow.json"
+import animationData from "../../../../public/arrow.json"
 import {Link} from "react-router-dom";
 
 

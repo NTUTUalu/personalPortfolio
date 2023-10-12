@@ -1,10 +1,7 @@
 import Lottie from "lottie-react";
-import animationData from "../../images/arrow.json";
-// import projectStyles from "../projects/projects.module.css";
-
+import animationData from "../../../../public/arrow.json";
 import projectStyles from "./projects.module.css";
-// import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-//import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import ProjectPortfolio from "../projectPortfolio/projectPortfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "react-bootstrap/Tab";

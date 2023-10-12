@@ -5,7 +5,20 @@
   flex-direction: column;
   position: relative;
   padding: 0px 100px 40px 100px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
   
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 .tabWrapper {
   position: relative;

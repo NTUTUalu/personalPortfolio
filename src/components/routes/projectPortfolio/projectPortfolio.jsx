@@ -4,41 +4,40 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Projectportfolio({ filterCriteria }) {
  
-  
   const projects = [
     {
-      src: "../src/components/images/KFC.png",
+      src: "../../../../public/KFC.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/160675629/KFC-mobile-design-app"
     },
     {
-      src: "../src/components/images/PMPICTURES.png",
+      src: "../../../../public/PMPICTURES.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/161085587/PM-PICTURES"
     },
     {
-      src: "../src/components/images/E-Health.png",
+      src: "../../../../public/E-Health.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/167922099/E-Health-Africa"
     },
     {
-      src: "../src/components/images/Cutlery.png",
+      src: "../../../../public/Cutlery.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/164729167/Cuttlery-e-commerce-store"
     },
     {
-      src: "../src/components/images/logitechweb.png",
+      src: "../../../../public/logitechweb.png",
       alt: "website",
       href2: "https://logitechconsultancy.vercel.app/"
     },
     {
-      src: "../src/components/images/CodeWars.png",
+      src: "../../../../public/CodeWars.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/160531243/Code-wars-website"
       
     },
     {
-      src: "../src/components/images/logitech.png",
+      src: "../../../../public/logitech.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/156179299/Logitech-consultancy"
     },

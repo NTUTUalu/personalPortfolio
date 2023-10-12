@@ -1,10 +1,10 @@
 import AboutStyles from "./about.module.css";
 import NavSlider from "../navslider/navSlider";
-import skillSet from "../../images/skillComposition.svg";
-import books from "../../images/favbooks.svg";
-import random from "../../images/randomFacts.json";
+import skillSet from "../../../../public/skillComposition.svg";
+import books from "../../../../public/favbooks.svg";
+import random from "../../../../public/randomFacts.json";
 import Lottie from "lottie-react";
-import animationData from "../../images/arrow.json";
+import animationData from "../../../../public/arrow.json";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
@@ -15,6 +15,10 @@ function About() {
   const [image, newImage] = useState(aboutList[0].image);
   const [activeIndex, setActiveIndex] = useState(0);
 
+
+  //FIXME:
+  //NOTE:
+  //DEBUG:
   function changeUI(index) {
     newIntro(aboutList[index].intro);
     newDetails(aboutList[index].details);
@@ -110,7 +114,8 @@ function About() {
         </div>
       </section>
       <section className={AboutStyles.graph}>
-        <img src={books} className={AboutStyles.books} />
+         {/* <img className={AboutStyles.booksImage} src={books} alt="Favorite Books" /> */}
+      {/* <img src={process.env.PUBLIC_URL + '/favbooks.svg'} alt="Favorite Books" /> */}
       </section>
 
       <div className={AboutStyles.nextHome}>
@@ -129,32 +134,32 @@ const aboutList = [
       "I am a frontend developer currently studying at the African Leadership University",
     details:
       "Since beginning my coding journey 2 years ago, it has really been more about discovery and enhancing my skills using Javascript frameworks. For the year 2023 to 2024, I will be nurturing my mental muscles in using React JS and Next JS to build web applications.",
-    image: "../src/components/images/React.png",
+    image: "../../../../public/React.png",
   },
   {
     intro: "My dream destination is Canada.",
     details:
       ' I have seen youtube videos of techies having jobs in Canada, their "Day in their lives as Software Engineers" videos on youtube are definitely a bomb! Their content really inspires me as an ever growing software developer.',
-    image: "../src/components/images/Canada-flag.jpg",
+    image: "../../../../public/Canada-flag.jpg",
   },
   {
     intro: "   Atomic habits. What a fantastic book! ",
     details:
       "I am low-key interested in building an app that is in correlation to what I learnt from reading this book. It is a great book which I recommend for anyone trying to break bad habits, this book will definitely help them thrive.",
-    image: "../src/components/images/habits.jpg",
+    image: "../../../../public/habits.jpg",
   },
   {
     intro: "Breakfast + Lunch = Brunch.",
     details:
       '    Rather than have breakfast then later, lunch. I prefer having a late breakfast at around 10 a.m which I refer to as "brunch." This is a habit that honestly comes from a budget stricken life of a college student. Lol, Tough times never last!',
-    image: "../src/components/images/LetsDoBrunch.jpg",
+    image: "../../../../public/LetsDoBrunch.jpg",
   },
   {
     intro:
       "Kevin De Bruyne is my current favorite player in the English Premier League.",
     details:
       "   Being a supporter of great football, it goes without a doubt that my heart will gravitate towards favoritism of players that play the kind of style I like. Kevin De Bruyne is that magician for me. His ability to give fantastic assists to strikers is out of this world. He is the king of modern football.",
-    image: "../src/components/images/kdb.jpg",
+    image: "../../../../public/kdb.jpg",
   },
 ];
 

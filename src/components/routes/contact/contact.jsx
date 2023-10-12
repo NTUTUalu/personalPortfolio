@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { Form } from "react-router-dom";
 import Lottie from "lottie-react";
-import animationData from "../../images/arrow.json";
+import animationData from "../../../../public/arrow.json";
 import { Link } from "react-router-dom";
 import contactStyles from "./contact.module.css";
 import {db} from "../../../../firebase";
 import {addDoc, collection} from 'firebase/firestore';
 
 function Contact() {
-
-
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

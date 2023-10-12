@@ -403,7 +403,13 @@
     margin-top: 150px;
     display: flex;
     height: fit-content;
-    /* background-color: blue; */
+    width: 100%;
+    position: relative;
+    background-color: blue;
+  }
+  .booksImage{
+    height: 50%;
+    width: 50%;position: relative;
   }
   .books {
     /* background-color: aquamarine; */
@@ -424,7 +430,7 @@
     /* background-color: #df9292; */
 
   }
-
+  
   .color{
     /* background-color: #df9292; */
     margin: 0px 0px 40px 0px;

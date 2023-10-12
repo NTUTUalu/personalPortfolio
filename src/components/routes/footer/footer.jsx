@@ -1,5 +1,5 @@
 import React from "react";
-import c from "../../images/copyright.png";
+import c from "../../../../public/copyright.png";
 import footerStyles from "./footer.module.css";
 
 function Footer() {
