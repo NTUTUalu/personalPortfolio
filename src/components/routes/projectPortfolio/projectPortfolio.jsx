@@ -6,7 +6,7 @@ function Projectportfolio({ filterCriteria }) {
  
   const projects = [
     {
-      src: "../../../../public/KFC.png",
+      src: "/KFC.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/160675629/KFC-mobile-design-app"
     },
