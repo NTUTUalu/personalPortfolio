@@ -114,7 +114,7 @@ function About() {
         </div>
       </section>
       <section className={AboutStyles.graph}>
-         {/* <img className={AboutStyles.booksImage} src={books} alt="Favorite Books" /> */}
+         <img className={AboutStyles.books} src={books} alt="Favorite Books" />
       {/* <img src={process.env.PUBLIC_URL + '/favbooks.svg'} alt="Favorite Books" /> */}
       </section>
 
