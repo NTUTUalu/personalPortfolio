@@ -11,33 +11,33 @@ function Projectportfolio({ filterCriteria }) {
       href2: "https://www.behance.net/gallery/160675629/KFC-mobile-design-app"
     },
     {
-      src: "../../../../public/PMPICTURES.png",
+      src: "/PMPictures.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/161085587/PM-PICTURES"
     },
     {
-      src: "../../../../public/E-Health.png",
+      src: "/E-Health.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/167922099/E-Health-Africa"
     },
     {
-      src: "../../../../public/Cutlery.png",
+      src: "/Cutlery.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/164729167/Cuttlery-e-commerce-store"
     },
     {
-      src: "../../../../public/logitechweb.png",
+      src: "/logitechweb.png",
       alt: "website",
       href2: "https://logitechconsultancy.vercel.app/"
     },
     {
-      src: "../../../../public/CodeWars.png",
+      src: "/CodeWars.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/160531243/Code-wars-website"
       
     },
     {
-      src: "../../../../public/logitech.png",
+      src: "/logitech.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/156179299/Logitech-consultancy"
     },

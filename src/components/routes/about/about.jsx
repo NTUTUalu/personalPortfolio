@@ -134,32 +134,32 @@ const aboutList = [
       "I am a frontend developer currently studying at the African Leadership University",
     details:
       "Since beginning my coding journey 2 years ago, it has really been more about discovery and enhancing my skills using Javascript frameworks. For the year 2023 to 2024, I will be nurturing my mental muscles in using React JS and Next JS to build web applications.",
-    image: "../../../../public/React.png",
+    image: "/React.png",
   },
   {
     intro: "My dream destination is Canada.",
     details:
       ' I have seen youtube videos of techies having jobs in Canada, their "Day in their lives as Software Engineers" videos on youtube are definitely a bomb! Their content really inspires me as an ever growing software developer.',
-    image: "../../../../public/Canada-flag.jpg",
+    image: "/Canada-flag.jpg",
   },
   {
     intro: "   Atomic habits. What a fantastic book! ",
     details:
       "I am low-key interested in building an app that is in correlation to what I learnt from reading this book. It is a great book which I recommend for anyone trying to break bad habits, this book will definitely help them thrive.",
-    image: "../../../../public/habits.jpg",
+    image: "/public/habits.jpg",
   },
   {
     intro: "Breakfast + Lunch = Brunch.",
     details:
       '    Rather than have breakfast then later, lunch. I prefer having a late breakfast at around 10 a.m which I refer to as "brunch." This is a habit that honestly comes from a budget stricken life of a college student. Lol, Tough times never last!',
-    image: "../../../../public/LetsDoBrunch.jpg",
+    image: "/LetsDoBrunch.jpg",
   },
   {
     intro:
       "Kevin De Bruyne is my current favorite player in the English Premier League.",
     details:
       "   Being a supporter of great football, it goes without a doubt that my heart will gravitate towards favoritism of players that play the kind of style I like. Kevin De Bruyne is that magician for me. His ability to give fantastic assists to strikers is out of this world. He is the king of modern football.",
-    image: "../../../../public/kdb.jpg",
+    image: "/kdb.jpg",
   },
 ];
 
