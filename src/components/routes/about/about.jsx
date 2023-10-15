@@ -146,7 +146,7 @@ const aboutList = [
     intro: "   Atomic habits. What a fantastic book! ",
     details:
       "I am low-key interested in building an app that is in correlation to what I learnt from reading this book. It is a great book which I recommend for anyone trying to break bad habits, this book will definitely help them thrive.",
-    image: "/public/habits.jpg",
+    image: "/habits.jpg",
   },
   {
     intro: "Breakfast + Lunch = Brunch.",
