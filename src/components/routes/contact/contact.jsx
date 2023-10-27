@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import contactStyles from "./contact.module.css";
 import {db} from "../../../../firebase";
 import {addDoc, collection} from 'firebase/firestore';
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
 
@@ -55,6 +56,11 @@ function Contact() {
   return (
     <>
       <div className={contactStyles.wrapper}>
+      <Helmet>
+        <title>Contact Page</title>
+        <meta name="description" content="Connect with me here"/>
+        <link rel="canonical" href="contact/:contactId"/>
+       </Helmet>
         <h3 className={contactStyles.pHeading}>Contact.</h3>
         <p>Connect with me directly through my email. Thanks in advance!</p>
         <section className={contactStyles.formWrapper}>

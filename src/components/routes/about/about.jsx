@@ -8,6 +8,7 @@ import animationData from "../../../../public/arrow.json";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { Helmet } from "react-helmet-async";
 
 function About() {
   const [intro, newIntro] = useState(aboutList[0].intro);
@@ -44,7 +45,11 @@ function About() {
   return (
     
     <div className={AboutStyles.color}>
-       
+       <Helmet>
+        <title>About Page</title>
+        <meta name="description" content="learn more about me here"/>
+        <link rel="canonical" href="about/:aboutId"/>
+       </Helmet>
       {isMobile ? (
         <div className={AboutStyles.wrapper2}>
         {/* Create a separate div for the text content */}
@@ -82,6 +87,7 @@ function About() {
       )}
 
       <NavSlider changeDetails={changeUI} aboutList={aboutList} />
+      
       <div className={AboutStyles.skills}>
         <div className={AboutStyles.leftskills}>
           <h3>Frontend developer</h3>

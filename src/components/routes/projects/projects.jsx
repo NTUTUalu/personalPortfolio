@@ -8,6 +8,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import {Link} from "react-router-dom";
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet-async";
 
 function Projects() {
   const [isMobile, setIsMobile] = useState(false);
@@ -31,6 +32,11 @@ function Projects() {
   
   return (
     <div className={projectStyles.color}>
+        <Helmet>
+        <title>Projects Page</title>
+        <meta name="description" content="Here are a couple of projects I have built over my university time-span"/>
+        <link rel="canonical" href="projects/:projectsId"/>
+       </Helmet>
       <h3 className={projectStyles.pHeading}>Projects.</h3>
 
       <section className={projectStyles.tabWrapper}>

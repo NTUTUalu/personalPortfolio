@@ -3,12 +3,17 @@ import homeStyles from "./home.module.css";
 import Lottie from "lottie-react"
 import animationData from "../../../../public/arrow.json"
 import {Link} from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 
 function Home() { 
   return (
     <>
     <div className={homeStyles.container}>
+    <Helmet>
+        <title>Home Page</title>
+        <meta name="description" content="Here is my introduction overview"/>
+        <link rel="canonical" href="/"/>
+       </Helmet>
       <div className={homeStyles.front}>
         <div>
         <h2>Hi, {`I'm`} Ntutu Sekonyela.</h2>
