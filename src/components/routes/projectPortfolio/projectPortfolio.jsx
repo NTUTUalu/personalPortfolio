@@ -40,6 +40,10 @@ function Projectportfolio({ filterCriteria }) {
       src: "/logitech.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/156179299/Logitech-consultancy"
+    }, {
+      src: "/banner.png",
+      alt: "website",
+      href2: "https://foodapp-vert.vercel.app/"
     },
   ];
 
