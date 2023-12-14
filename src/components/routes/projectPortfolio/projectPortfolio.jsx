@@ -45,6 +45,11 @@ function Projectportfolio({ filterCriteria }) {
       alt: "website",
       href2: "https://foodapp-vert.vercel.app/"
     },
+    {
+      src: "/pm.png",
+      alt: "website",
+      href2: "https://pm-pictures.webflow.io/"
+    },
   ];
 
   const handleImageClick = (event, href2) => {
