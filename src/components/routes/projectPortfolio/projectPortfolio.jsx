@@ -50,6 +50,11 @@ function Projectportfolio({ filterCriteria }) {
       alt: "website",
       href2: "https://pm-pictures.webflow.io/"
     },
+     {
+      src: "/Egg.png",
+      alt: "design",
+      href2: "https://www.behance.net/gallery/188230753/Egg-Go?share=1"
+    },
   ];
 
   const handleImageClick = (event, href2) => {
