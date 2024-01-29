@@ -55,6 +55,11 @@ function Projectportfolio({ filterCriteria }) {
       alt: "design",
       href2: "https://www.behance.net/gallery/188230753/Egg-Go?share=1"
     },
+    {
+      src: "/logo.png",
+      alt: "website",
+      href2: "https://crop-guard-qvqjzeui9-ntutualu.vercel.app/"
+    },
   ];
 
   const handleImageClick = (event, href2) => {
