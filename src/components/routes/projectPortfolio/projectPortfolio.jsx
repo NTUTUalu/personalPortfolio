@@ -60,6 +60,11 @@ function Projectportfolio({ filterCriteria }) {
       alt: "website",
       href2: "https://crop-guard-qvqjzeui9-ntutualu.vercel.app/"
     },
+    {
+      src: "/todo.jpg",
+      alt: "website",
+      href2: "https://todo-app-one-phi-66.vercel.app/"
+    },
   ];
 
   const handleImageClick = (event, href2) => {
