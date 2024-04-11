@@ -25,6 +25,10 @@
   margin:0px;
   }
 
+  .activeLink {
+    border-bottom: 1px solid #acacac; /* Change the color and size as needed */
+  }
+
 .links {
   text-decoration: none;
   margin-right: 10px;
