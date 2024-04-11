@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./projectPortfolio.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Suspense } from 'react';
+import Place_Holder from '../../placeholder/placeholder'
 
 function Projectportfolio({ filterCriteria }) {
  
@@ -61,9 +63,19 @@ function Projectportfolio({ filterCriteria }) {
       href2: "https://crop-guard-qvqjzeui9-ntutualu.vercel.app/"
     },
     {
+      src: "/c1.jpg",
+      alt: "website",
+      href2: "https://the-convergent-group.vercel.app/"
+    },
+    {
       src: "/todo.jpg",
       alt: "website",
       href2: "https://todo-app-one-phi-66.vercel.app/"
+    },
+    {
+      src: "/vacancy.png",
+      alt: "website",
+      href2: "https://jobsearch-gules.vercel.app/"
     },
   ];
 
@@ -82,6 +94,7 @@ function Projectportfolio({ filterCriteria }) {
   return (
     <>
       <div className={styles.gridContainer}>
+    
         {filteredProjects.map((project, index) => (
           <div className={styles.gridItem} key={index}>
             <a href={project.href2} target="_blank" rel="noopener noreferrer" onClick={(e) => handleImageClick(e,project.href2)}>
