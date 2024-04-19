@@ -27,6 +27,7 @@ function Projectportfolio({ filterCriteria }) {
       alt: "design",
       href2: "https://www.behance.net/gallery/164729167/Cuttlery-e-commerce-store"
     },
+    
     {
       src: "/logitechweb.png",
       alt: "website",
@@ -76,6 +77,11 @@ function Projectportfolio({ filterCriteria }) {
       src: "/vacancy.png",
       alt: "website",
       href2: "https://jobsearch-gules.vercel.app/"
+    },
+    {
+      src: "/Egg.png",
+      alt: "website",
+      href2: "https://the-capstone-project-ten.vercel.app/"
     },
   ];
 
