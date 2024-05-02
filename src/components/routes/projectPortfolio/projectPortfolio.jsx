@@ -79,7 +79,7 @@ function Projectportfolio({ filterCriteria }) {
       href2: "https://jobsearch-gules.vercel.app/"
     },
     {
-      src: "/Egg.png",
+      src: "/2.png",
       alt: "website",
       href2: "https://the-capstone-project-ten.vercel.app/"
     },
