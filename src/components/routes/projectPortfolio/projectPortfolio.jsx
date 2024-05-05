@@ -83,6 +83,11 @@ function Projectportfolio({ filterCriteria }) {
       alt: "website",
       href2: "https://the-capstone-project-ten.vercel.app/"
     },
+    {
+      src: "/restaurantmenu.png",
+      alt: "website",
+      href2: "https://the-capstone-project-ten.vercel.app/"
+    },
   ];
 
   const handleImageClick = (event, href2) => {
