@@ -20,18 +20,18 @@ body {
   height: auto;
   margin: 0px;
   padding: 0px;
-  background-image: url("/a.jpg"); /* Set the background image path */
+  /* background-image: url("/a.jpg"); Set the background image path */
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0px;
   padding: 0px;
+  /* background-color: blueviolet; */
   
 
 }
 
 * {
   box-sizing: border-box;
-  
   
 }
