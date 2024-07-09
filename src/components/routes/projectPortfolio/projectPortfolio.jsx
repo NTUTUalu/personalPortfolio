@@ -12,6 +12,8 @@ function Projectportfolio({ filterCriteria }) {
       alt: "design",
       href2: "https://www.behance.net/gallery/160675629/KFC-mobile-design-app"
     },
+    // https://architecture-group.vercel.app/
+  
     {
       src: "/PMPictures.png",
       alt: "design",
@@ -43,7 +45,14 @@ function Projectportfolio({ filterCriteria }) {
       src: "/logitech.png",
       alt: "design",
       href2: "https://www.behance.net/gallery/156179299/Logitech-consultancy"
-    }, {
+    }, 
+    {
+      src: "/realEstates.png",
+      alt: "website",
+      href2: "https://architecture-group.vercel.app"
+    },
+    
+    {
       src: "/banner.png",
       alt: "website",
       href2: "https://foodapp-vert.vercel.app/"
