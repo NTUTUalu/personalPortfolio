@@ -49,7 +49,7 @@ function Projectportfolio({ filterCriteria }) {
     {
       src: "/realEstates.png",
       alt: "website",
-      href2: "https://architecture-group.vercel.app"
+      href2: "https://moneri-architectural-designs.vercel.app/"
     },
     
     {
