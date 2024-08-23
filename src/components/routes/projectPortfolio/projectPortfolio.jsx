@@ -12,6 +12,11 @@ function Projectportfolio({ filterCriteria }) {
       alt: "design",
       href2: "https://www.behance.net/gallery/160675629/KFC-mobile-design-app"
     },
+      {
+      src: "/jobz.png",
+      alt: "website",
+      href2: "https://lesotho-jobs.vercel.app/"
+    },
     // https://architecture-group.vercel.app/
   
     {
